@@ -26,6 +26,10 @@
       "yarn lint"
     ]
   },
+  "jest": {
+    "preset": "jest-preset-jolt",
+    "testEnvironment": "node"
+  },
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
