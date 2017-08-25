@@ -20,6 +20,10 @@
   "files": [
     "build"
   ],
+  "dependencies": {
+    "invariant": "^2.2.2",
+    "moment": "^2.18.1"
+  },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
     "clean": "rimraf build",
