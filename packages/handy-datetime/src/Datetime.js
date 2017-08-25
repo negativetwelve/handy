@@ -1,5 +1,5 @@
 // Libraries
-import _ from 'lodash';
+import _ from 'jolt-lodash';
 import invariant from 'invariant';
 import moment from 'moment';
 

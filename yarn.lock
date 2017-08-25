@@ -2815,6 +2815,12 @@ jest@^20.0.4:
   dependencies:
     jest-cli "^20.0.4"
 
+jolt-lodash@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/jolt-lodash/-/jolt-lodash-2.5.1.tgz#a8402d61ae0d67292ce2f212cf7ae8597b11b2b0"
+  dependencies:
+    lodash "^4.17.4"
+
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
