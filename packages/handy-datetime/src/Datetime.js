@@ -1,4 +1,5 @@
 // Libraries
+import _ from 'lodash';
 import invariant from 'invariant';
 import moment from 'moment';
 
@@ -219,7 +220,7 @@ class Datetime {
       case 0:
         // If it doesn't have any colons, just continue!
         return string;
-      case 1:
+      case 1: // eslint-disable-line no-case-declarations
         const tokens = string.split(':');
         const [hours, rest] = tokens;
         const [minutes, meridiem] = rest.match(/.{1,2}/g) || [];
