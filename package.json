@@ -7,9 +7,12 @@
     "yarn": ">=0.27.5"
   },
   "devDependencies": {
+    "babel-preset-jolt": "^2.4.0",
     "eslint": "^4.4.1",
+    "eslint-config-jolt": "^2.4.0",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
+    "jest-preset-jolt": "^2.4.0",
     "lerna": "^2.0.0",
     "lint-staged": "^4.0.3",
     "rimraf": "^2.6.1"
