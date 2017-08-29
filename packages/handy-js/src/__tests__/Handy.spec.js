@@ -1,5 +1,5 @@
 // Modules
-import {Datetime} from '../handy';
+import {Datetime} from '../Handy';
 
 
 describe('Handy', () => {
