@@ -8,9 +8,10 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-jolt": "^2.5.0",
+    "babel-preset-jolt": "^2.7.0",
+    "coveralls": "^2.13.1",
     "eslint": "^4.4.1",
-    "eslint-config-jolt": "^2.5.0",
+    "eslint-config-jolt": "^2.7.0",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
     "jest-preset-jolt": "^2.7.2",
@@ -18,26 +19,27 @@
     "lint-staged": "^4.0.3",
     "rimraf": "^2.6.1"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "jest": {
+    "preset": "jest-preset-jolt"
+  },
   "lint-staged": {
     "*.js": [
       "yarn lint"
     ]
   },
-  "jest": {
-    "preset": "jest-preset-jolt",
-    "testEnvironment": "node"
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "clean": "lerna clean --yes && lerna run clean",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint .",
     "lint:cached": "yarn lint -- --cache",
     "precommit": "lint-staged",
     "test": "jest",
-    "test:build": "yarn run build && yarn run test"
+    "test:build": "yarn run build && yarn run test",
+    "test:coverage": "yarn test -- --coverage"
   }
 }
