@@ -654,9 +654,9 @@ describe('Datetime', () => {
      */
     describe('spanning DST', () => {
       // Set the `datetime` to before DST and the current time to after.
-      set('now', () => '2017-03-12T01:00:00.000 -800');
+      set('now', () => '2017-03-12T01:00:00.000 -0800');
       set('datetime', () => Datetime.create(now));
-      clock.set(Datetime.create('2017-03-12T03:00:000 -700'));
+      clock.set(Datetime.create('2017-03-12T03:00:00.000 -0700'));
 
       describe('time between', () => {
         it('returns the correct hours between', () => {
