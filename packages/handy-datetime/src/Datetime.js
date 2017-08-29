@@ -262,7 +262,7 @@ class Datetime {
     // Remove all values that we can't parse.
     string = this.sanitize(string);
 
-    if (_.empty(string)) {
+    if (_.isEmpty(string)) {
       // If after sanitizing, there's nothing left, we can exit with the
       // empty Datetime.
       return new this();
@@ -1164,9 +1164,9 @@ class Datetime {
 
     switch (monthName) {
       case 'September':
-        return _.first(monthName, 4);
+        return _.firstN(monthName, 4);
       default:
-        return _.first(monthName, 3);
+        return _.firstN(monthName, 3);
     }
   }
 
