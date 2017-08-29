@@ -11,6 +11,7 @@
     "handy",
     "utilities"
   ],
+  "main": "build/Handy",
   "files": [
     "build"
   ],
