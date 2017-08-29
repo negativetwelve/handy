@@ -1,6 +1,6 @@
 {
   "name": "handy-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Handy format classes for common abstractions: datetime, duration, filesize.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -15,7 +15,7 @@
     "build"
   ],
   "dependencies": {
-    "handy-datetime": "^1.0.1"
+    "handy-datetime": "^1.0.2"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
