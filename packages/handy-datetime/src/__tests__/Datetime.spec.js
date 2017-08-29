@@ -511,7 +511,7 @@ describe('Datetime', () => {
     });
 
     describe('after a month, less than a year after', () => {
-      set('now', () => '2017-06-31T02:30:00.000Z');
+      set('now', () => '2017-06-30T02:30:00.000Z');
 
       subject(() => datetime);
       its('abbreviatedTimeInWords', () => isExpected.toBe('5mo'));
