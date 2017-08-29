@@ -234,7 +234,7 @@ class Datetime {
         }
 
         // Make sure the hours has 2 digits by padding it with 0s.
-        const paddedHours = _.pad(hours, {size: 2, token: '0'});
+        const paddedHours = _.padStart(hours, 2, '0');
 
         return _.join([paddedHours, rest], '');
       default:
@@ -1178,7 +1178,7 @@ class Datetime {
   }
 
   get monthNumberPadded() {
-    return _.pad(this.monthNumber);
+    return _.padStart(this.monthNumber, 2, '0');
   }
 
   /**
@@ -1260,7 +1260,7 @@ class Datetime {
   }
 
   get dayOfMonthNumberPadded() {
-    return _.pad(this.dayOfMonthNumber);
+    return _.padStart(this.dayOfMonthNumber, 2, '0');
   }
 
   /**
