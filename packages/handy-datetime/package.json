@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "homepage": "https://github.com/negativetwelve/handy",
-  "repository": "negativetwelve/handy",
+  "repository": "https://github.com/negativetwelve/handy/tree/master/packages/handy-datetime",
   "keywords": [
     "date",
     "datetime",
