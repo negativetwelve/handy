@@ -1,11 +1,11 @@
 // Modules
-import {Datetime} from '../Handy';
+import Handy from '../Handy';
 
 
 describe('Handy', () => {
   describe('Datetime', () => {
     it('should exist', () => {
-      expect(Datetime).toBeDefined();
+      expect(Handy.Datetime).toBeDefined();
     });
   });
 });
