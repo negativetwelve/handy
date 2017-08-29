@@ -19,6 +19,24 @@
     "lint-staged": "^4.0.3",
     "rimraf": "^2.6.1"
   },
+  "babel": {
+    "presets": [
+      [
+        "jolt",
+        {
+          "target": "node"
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "extends": "jolt"
+  },
+  "eslintIgnore": [
+    "build",
+    "coverage",
+    "node_modules"
+  ],
   "jest": {
     "preset": "jest-preset-jolt"
   },
