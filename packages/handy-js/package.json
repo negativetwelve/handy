@@ -16,5 +16,10 @@
   ],
   "dependencies": {
     "handy-datetime": "^1.0.1"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore '**/*.spec.js'",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
   }
 }
