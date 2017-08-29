@@ -1,6 +1,6 @@
 {
   "name": "handy-js",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "Handy format classes for common abstractions: datetime, duration, filesize.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -15,6 +15,6 @@
     "build"
   ],
   "dependencies": {
-    "handy-datetime": "^1.0.0"
+    "handy-datetime": "^1.0.1"
   }
 }
