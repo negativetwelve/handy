@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "invariant": "^2.2.2",
-    "jolt-lodash": "^2.7.4",
+    "jolt-lodash": "^2.7.5",
     "moment": "^2.18.1"
   },
   "scripts": {

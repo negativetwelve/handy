@@ -2838,9 +2838,9 @@ jest@^20.0.4:
   dependencies:
     jest-cli "^20.0.4"
 
-jolt-lodash@^2.7.4:
-  version "2.7.4"
-  resolved "https://registry.yarnpkg.com/jolt-lodash/-/jolt-lodash-2.7.4.tgz#1d8fd5a90105e44b068e2ceb1bec0684aa6a3b62"
+jolt-lodash@^2.7.5:
+  version "2.7.5"
+  resolved "https://registry.yarnpkg.com/jolt-lodash/-/jolt-lodash-2.7.5.tgz#81f6b177ed02282e3a897487bcbe843be3ad2773"
   dependencies:
     lodash "^4.17.4"
     pluralize "^7.0.0"
