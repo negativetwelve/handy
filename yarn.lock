@@ -2239,8 +2239,8 @@ iconv-lite@^0.4.17:
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.18.tgz#23d8656b16aae6742ac29732ea8f0336a4789cf2"
 
 ignore@^3.2.0, ignore@^3.3.3:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.4.tgz#85ab6d0a9ca8b27b31604c09efe1c14dc21ab872"
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.5.tgz#c4e715455f6073a8d7e5dae72d2fc9d71663dba6"
 
 imurmurhash@^0.1.4:
   version "0.1.4"
@@ -2838,11 +2838,12 @@ jest@^20.0.4:
   dependencies:
     jest-cli "^20.0.4"
 
-jolt-lodash@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/jolt-lodash/-/jolt-lodash-2.7.1.tgz#4c1d0a1f25a8c24847e380e1d8c9dd7b6be7b73d"
+jolt-lodash@^2.7.4:
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/jolt-lodash/-/jolt-lodash-2.7.4.tgz#1d8fd5a90105e44b068e2ceb1bec0684aa6a3b62"
   dependencies:
     lodash "^4.17.4"
+    pluralize "^7.0.0"
 
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
@@ -2967,8 +2968,8 @@ lcid@^1.0.0:
     invert-kv "^1.0.0"
 
 lerna@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.1.0.tgz#22da4c9cb09f7733a7e87ba8f34779a509c172ea"
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.1.1.tgz#1d563926204dca11e56d637cac16587d66aa264a"
   dependencies:
     async "^1.5.0"
     chalk "^2.1.0"
@@ -3611,6 +3612,10 @@ pluralize@^1.2.1:
 pluralize@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-4.0.0.tgz#59b708c1c0190a2f692f1c7618c446b052fd1762"
+
+pluralize@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
 
 prelude-ls@~1.1.2:
   version "1.1.2"

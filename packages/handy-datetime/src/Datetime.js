@@ -1032,15 +1032,15 @@ class Datetime {
       // NOTE(mark): Singular and plural both return `min`.
       return `${minutes} min`;
     } else if (days < 1) {
-      return _.pluralize('hour', hours);
+      return _.pluralize('hour', hours, true);
     } else if (weeks < 1) {
-      return _.pluralize('day', days);
+      return _.pluralize('day', days, true);
     } else if (months < 1) {
-      return _.pluralize('week', weeks);
+      return _.pluralize('week', weeks, true);
     } else if (years < 1) {
-      return _.pluralize('month', months);
+      return _.pluralize('month', months, true);
     } else {
-      return _.pluralize('year', years);
+      return _.pluralize('year', years, true);
     }
   }
 
