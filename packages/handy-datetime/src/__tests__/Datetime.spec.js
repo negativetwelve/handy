@@ -362,7 +362,7 @@ describe('Datetime', () => {
     // Monday, December 5th, 2016 at 6pm. Not setting this to UTC causes
     // some bugs with the `.today` method which ends up affecting everything
     // else.
-    clock.set('2016-12-05T18:00:00.000');
+    clock.set(Datetime.create('2016-12-05T18:00:00.000'));
 
     describe('.beginningOfWeek', () => {
       it('returns the time at midnight', () => {
@@ -417,7 +417,7 @@ describe('Datetime', () => {
 
   describe('relative time', () => {
     // Tuesday, January 31, 2017 at 2:30am.
-    clock.set('2017-01-31T02:30:00.000Z', {utc: true});
+    clock.set(Datetime.create('2017-01-31T02:30:00.000Z', {utc: true}));
     set('datetime', () => new Datetime(now, {utc: true}));
 
     describe('less than a minute after', () => {
@@ -656,7 +656,7 @@ describe('Datetime', () => {
       // Set the `datetime` to before DST and the current time to after.
       set('now', () => '2017-03-12T01:00:00.000 -800');
       set('datetime', () => Datetime.create(now));
-      clock.set('2017-03-12T03:00:000 -700');
+      clock.set(Datetime.create('2017-03-12T03:00:000 -700'));
 
       describe('time between', () => {
         it('returns the correct hours between', () => {
@@ -681,7 +681,7 @@ describe('Datetime', () => {
     set('datetime', () => Datetime.utc('2016-12-15'));
 
     describe('2 weeks in the past', () => {
-      clock.set('2016-12-29');
+      clock.set(Datetime.create('2016-12-29'));
 
       subject(() => datetime);
       its('daysFromNow', () => isExpected.toBe(-14));
@@ -694,7 +694,7 @@ describe('Datetime', () => {
     });
 
     describe('1 week in the past', () => {
-      clock.set('2016-12-22');
+      clock.set(Datetime.create('2016-12-22'));
 
       subject(() => datetime);
       its('daysFromNow', () => isExpected.toBe(-7));
@@ -707,7 +707,7 @@ describe('Datetime', () => {
     });
 
     describe('yesterday', () => {
-      clock.set('2016-12-16');
+      clock.set(Datetime.create('2016-12-16'));
 
       subject(() => datetime);
       its('daysFromNow', () => isExpected.toBe(-1));
@@ -720,7 +720,7 @@ describe('Datetime', () => {
     });
 
     describe('today', () => {
-      clock.set('2016-12-15');
+      clock.set(Datetime.create('2016-12-15'));
 
       subject(() => datetime);
       its('daysFromNow', () => isExpected.toBe(0));
@@ -733,7 +733,7 @@ describe('Datetime', () => {
     });
 
     describe('tomorrow', () => {
-      clock.set('2016-12-14');
+      clock.set(Datetime.create('2016-12-14'));
 
       subject(() => datetime);
       its('daysFromNow', () => isExpected.toBe(1));
@@ -746,7 +746,7 @@ describe('Datetime', () => {
     });
 
     describe('1 week from now', () => {
-      clock.set('2016-12-08');
+      clock.set(Datetime.create('2016-12-08'));
 
       subject(() => datetime);
       its('daysFromNow', () => isExpected.toBe(7));
@@ -759,7 +759,7 @@ describe('Datetime', () => {
     });
 
     describe('2 weeks from now', () => {
-      clock.set('2016-12-01');
+      clock.set(Datetime.create('2016-12-01'));
 
       subject(() => datetime);
       its('daysFromNow', () => isExpected.toBe(14));
