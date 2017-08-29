@@ -139,7 +139,7 @@ describe('Datetime', () => {
           '8a',
         ];
 
-        withTestCases({string: eightAM}, () => {
+        forEach({string: eightAM}, () => {
           it('returns 8am', () => {
             expect(Datetime.fromTimeString(string).militaryTime).toBe('0800');
           });
@@ -156,7 +156,7 @@ describe('Datetime', () => {
           '8p',
         ];
 
-        withTestCases({string: eightPM}, () => {
+        forEach({string: eightPM}, () => {
           it('returns 8pm', () => {
             expect(Datetime.fromTimeString(string).militaryTime).toBe('2000');
           });
@@ -177,7 +177,7 @@ describe('Datetime', () => {
           'PM',
         ];
 
-        withTestCases({string: strings}, () => {
+        forEach({string: strings}, () => {
           it('returns the empty datetime', () => {
             expect(Datetime.fromTimeString(string).isEmpty).toBe(true);
           });
@@ -194,7 +194,7 @@ describe('Datetime', () => {
           '1:14',
         ];
 
-        withTestCases({string: strings}, () => {
+        forEach({string: strings}, () => {
           it('is not empty for valid strings', () => {
             expect(Datetime.fromTimeString(string).isEmpty).toBe(false);
           });
@@ -213,7 +213,7 @@ describe('Datetime', () => {
           ':',
         ];
 
-        withTestCases({string: strings}, () => {
+        forEach({string: strings}, () => {
           it('returns the empty datetime for invalid strings', () => {
             expect(Datetime.fromTimeString(string).isEmpty).toBe(true);
           });
@@ -293,7 +293,7 @@ describe('Datetime', () => {
         '2016-03-21T00:00:00',
       ];
 
-      withTestCases({string: strings}, () => {
+      forEach({string: strings}, () => {
         it(`returns true`, () => {
           expect(Datetime.isValidString(string)).toBe(true);
         });
@@ -307,7 +307,7 @@ describe('Datetime', () => {
         null,
       ];
 
-      withTestCases({string: strings}, () => {
+      forEach({string: strings}, () => {
         it(`returns true`, () => {
           expect(Datetime.isValidString(string)).toBe(false);
         });
@@ -322,7 +322,7 @@ describe('Datetime', () => {
         new Datetime('2016-03-21T00:00:00.200Z'),
       ];
 
-      withTestCases({datetime: datetimes}, () => {
+      forEach({datetime: datetimes}, () => {
         it('returns true', () => {
           expect(Datetime.isValidDatetime(datetime)).toBe(true);
         });
@@ -335,7 +335,7 @@ describe('Datetime', () => {
         '2016-03-21T00:00:00.200Z',
       ];
 
-      withTestCases({datetime: datetimes}, () => {
+      forEach({datetime: datetimes}, () => {
         it('returns false', () => {
           expect(Datetime.isValidDatetime(datetime)).toBe(false);
         });

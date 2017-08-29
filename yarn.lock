@@ -2748,7 +2748,7 @@ jest-plugins@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/jest-plugins/-/jest-plugins-1.4.0.tgz#42745b4a3312d3eb0b89fe7e6a561fe6fd5e02ed"
 
-jest-preset-jolt@^2.5.0:
+jest-preset-jolt@^2.7.1:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/jest-preset-jolt/-/jest-preset-jolt-2.7.1.tgz#5ffc786da6a99384aa2e34352dd77335ab37e0f3"
   dependencies:
