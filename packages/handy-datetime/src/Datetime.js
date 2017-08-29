@@ -463,7 +463,7 @@ class Datetime {
    * This should be used in the string check in Datetime.createMoment().
    */
   static isValidString(string) {
-    return _.isString(string) && _.notEmpty(string);
+    return _.isString(string) && !_.isEmpty(string);
   }
 
   static isValidDatetime(datetime) {

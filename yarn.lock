@@ -2699,6 +2699,12 @@ jest-plugin-action@^1.5.0:
   dependencies:
     jest-plugin-set "^1.5.0"
 
+jest-plugin-clock@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/jest-plugin-clock/-/jest-plugin-clock-1.6.1.tgz#980563e684ff4a4220f2b2ba7fc08edf02e7f438"
+  dependencies:
+    mockdate "^2.0.2"
+
 jest-plugin-console-matchers@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/jest-plugin-console-matchers/-/jest-plugin-console-matchers-1.5.0.tgz#122d6db0465463d59890c2d78d34df69459e1c08"
@@ -2725,11 +2731,12 @@ jest-plugin-set@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/jest-plugin-set/-/jest-plugin-set-1.5.0.tgz#ac0b3718cb0934c195bd969f5a24522f2d7dd6b5"
 
-jest-plugins-recommended@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/jest-plugins-recommended/-/jest-plugins-recommended-1.5.1.tgz#fe022120e4e696a1dabb590a0ab09e86fb13cfc5"
+jest-plugins-recommended@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/jest-plugins-recommended/-/jest-plugins-recommended-1.6.1.tgz#a1d6f9f59009bef998e2d765cc2aa9337d0f145d"
   dependencies:
     jest-plugin-action "^1.5.0"
+    jest-plugin-clock "^1.6.1"
     jest-plugin-console-matchers "^1.5.0"
     jest-plugin-for-each "^1.5.0"
     jest-plugins "^1.4.0"
@@ -2748,12 +2755,12 @@ jest-plugins@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/jest-plugins/-/jest-plugins-1.4.0.tgz#42745b4a3312d3eb0b89fe7e6a561fe6fd5e02ed"
 
-jest-preset-jolt@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/jest-preset-jolt/-/jest-preset-jolt-2.7.1.tgz#5ffc786da6a99384aa2e34352dd77335ab37e0f3"
+jest-preset-jolt@^2.7.2:
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/jest-preset-jolt/-/jest-preset-jolt-2.7.2.tgz#73d17770b63855224c6f7adcf8f7d792f226de19"
   dependencies:
     jest-plugins "^1.4.0"
-    jest-plugins-recommended "^1.5.1"
+    jest-plugins-recommended "^1.6.1"
 
 jest-regex-util@^20.0.3:
   version "20.0.3"
@@ -3274,6 +3281,10 @@ minimist@~0.0.1:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+mockdate@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/mockdate/-/mockdate-2.0.2.tgz#5ae0c0eaf8fe23e009cd01f9889b42c4f634af12"
 
 modify-values@^1.0.0:
   version "1.0.0"
