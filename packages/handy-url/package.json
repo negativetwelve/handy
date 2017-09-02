@@ -1,0 +1,32 @@
+{
+  "name": "handy-url",
+  "version": "0.0.0",
+  "description": "Handy class to parse, format, and manipulate urls.",
+  "license": "MIT",
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/handy",
+  "repository": "https://github.com/negativetwelve/handy/tree/master/packages/handy-url",
+  "keywords": [
+    "handy",
+    "parse",
+    "url",
+    "utilities",
+    "utils",
+    "website"
+  ],
+  "main": "build/Url",
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "jolt-lodash": "^2.7.7",
+    "qs": "6.2.0",
+    "url-parse": "1.1.1",
+    "valid-url": "1.0.9"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
+}
