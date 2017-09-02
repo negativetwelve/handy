@@ -204,7 +204,7 @@ class Url {
   }
 
   get domain() {
-    return _.first(_.last(this.hostname.split('.'), 2));
+    return _.first(_.lastN(this.hostname.split('.'), 2));
   }
 
   get tld() {
