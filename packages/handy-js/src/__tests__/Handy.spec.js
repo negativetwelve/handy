@@ -20,4 +20,10 @@ describe('Handy', () => {
       expect(Handy.Filesize).toBeDefined();
     });
   });
+
+  describe('Url', () => {
+    it('should exist', () => {
+      expect(Handy.Url).toBeDefined();
+    });
+  });
 });

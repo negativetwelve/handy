@@ -18,7 +18,8 @@
   "dependencies": {
     "handy-datetime": "^1.2.1",
     "handy-duration": "^1.2.1",
-    "handy-filesize": "^1.2.1"
+    "handy-filesize": "^1.2.1",
+    "handy-url": "^1.3.0"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
