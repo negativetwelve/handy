@@ -16,7 +16,8 @@
     "build"
   ],
   "dependencies": {
-    "handy-datetime": "^1.0.5"
+    "handy-datetime": "^1.0.5",
+    "handy-filesize": "^1.1.0"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
