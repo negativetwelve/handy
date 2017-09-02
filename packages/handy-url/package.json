@@ -19,6 +19,7 @@
     "build"
   ],
   "dependencies": {
+    "jolt-lodash": "^2.7.7",
     "qs": "6.2.0",
     "url-parse": "1.1.1",
     "valid-url": "1.0.9"
