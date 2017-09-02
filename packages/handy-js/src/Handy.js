@@ -1,5 +1,6 @@
 // Handy
 import Datetime from 'handy-datetime';
+import Duration from 'handy-duration';
 import Filesize from 'handy-filesize';
 
 
@@ -7,5 +8,6 @@ import Filesize from 'handy-filesize';
 // ES6 environments but still allows destructuring.
 module.exports = {
   Datetime,
+  Duration,
   Filesize,
 };

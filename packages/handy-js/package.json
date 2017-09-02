@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "handy-datetime": "^1.1.1",
+    "handy-duration": "^1.2.0",
     "handy-filesize": "^1.1.1"
   },
   "scripts": {
