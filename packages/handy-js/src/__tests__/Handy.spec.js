@@ -8,4 +8,10 @@ describe('Handy', () => {
       expect(Handy.Datetime).toBeDefined();
     });
   });
+
+  describe('Filesize', () => {
+    it('should exist', () => {
+      expect(Handy.Filesize).toBeDefined();
+    });
+  });
 });
