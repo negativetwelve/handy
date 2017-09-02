@@ -1,0 +1,28 @@
+{
+  "name": "handy-duration",
+  "version": "0.0.0",
+  "description": "Handy class to parse, format, and manipulate durations.",
+  "license": "MIT",
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/handy",
+  "repository": "https://github.com/negativetwelve/handy/tree/master/packages/handy-duration",
+  "keywords": [
+    "duration",
+    "handy",
+    "time",
+    "utilities",
+    "utils"
+  ],
+  "main": "build/Duration",
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "invariant": "^2.2.2"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore '**/*.spec.js'",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
+}
