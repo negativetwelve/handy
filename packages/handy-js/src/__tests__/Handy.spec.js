@@ -9,6 +9,12 @@ describe('Handy', () => {
     });
   });
 
+  describe('Duration', () => {
+    it('should exist', () => {
+      expect(Handy.Duration).toBeDefined();
+    });
+  });
+
   describe('Filesize', () => {
     it('should exist', () => {
       expect(Handy.Filesize).toBeDefined();
