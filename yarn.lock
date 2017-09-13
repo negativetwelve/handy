@@ -1664,6 +1664,10 @@ eslint-plugin-jest@^20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-20.0.3.tgz#ec15eba6ac0ab44a67ebf6e02672ca9d7e7cba29"
 
+eslint-plugin-jest@^21.0.2:
+  version "21.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.0.2.tgz#2eba7745844648513889d9d1bbefa3f5e3d05e54"
+
 eslint-scope@^3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-3.7.1.tgz#3d63c3edfda02e06e01a452ad88caacc7cdcb6e8"
@@ -2886,8 +2890,8 @@ jest@^20.0.4:
     jest-cli "^20.0.4"
 
 jolt-lodash@^2.7.7:
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/jolt-lodash/-/jolt-lodash-2.8.3.tgz#b850f3cf57e45b52e016a145d2b9ea1a2adcd992"
+  version "2.8.5"
+  resolved "https://registry.yarnpkg.com/jolt-lodash/-/jolt-lodash-2.8.5.tgz#25ba8b42418ca79fbb3fb33976beeaf25cc07b98"
   dependencies:
     lodash "^4.17.4"
     pluralize "^7.0.0"
