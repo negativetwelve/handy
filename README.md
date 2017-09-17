@@ -5,4 +5,4 @@
 [![AppVeyor](https://img.shields.io/appveyor/ci/negativetwelve/handy/master.svg?label=appveyor)](https://ci.appveyor.com/project/negativetwelve/handy)
 [![Coveralls](https://img.shields.io/coveralls/negativetwelve/handy.svg)](https://coveralls.io/github/negativetwelve/handy?branch=master)
 
-Handy format classes for common abstractions: datetime, duration, filesize.
+Handy classes for common abstractions: api, datetime, duration, filesize, url.
