@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "invariant": "^2.2.2",
+    "isomorphic-fetch": "^2.2.1",
     "jolt-lodash": "^2.7.7"
   },
   "scripts": {
