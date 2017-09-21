@@ -1,2 +1,4 @@
-// Polyfill the `self` for `isomorphic-fetch`.
-global.self = global;
+// Polyfill the global `self` for `isomorphic-fetch`.
+if (typeof global.self === 'undefined') {
+  global.self = global;
+}
