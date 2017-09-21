@@ -63,6 +63,23 @@ describe('Datetime', () => {
       its('isEmpty', () => isExpected.toBe(false));
     });
 
+    describe('with number', () => {
+      set('datetime', () => {
+        // Floating point numbers are allowed.
+        return new Datetime(1482287405200.123, {utc: true});
+      });
+
+      subject(() => datetime);
+      its('year', () => isExpected.toBe(2016));
+      its('monthNumber', () => isExpected.toBe(12));
+      its('dayOfMonthNumber', () => isExpected.toBe(21));
+      its('hour', () => isExpected.toBe(2));
+      its('minutes', () => isExpected.toBe(30));
+      its('seconds', () => isExpected.toBe(5));
+      its('milliseconds', () => isExpected.toBe(200));
+      its('isEmpty', () => isExpected.toBe(false));
+    });
+
     describe('with null', () => {
       set('datetime', () => new Datetime(null));
 

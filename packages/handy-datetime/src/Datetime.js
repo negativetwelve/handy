@@ -80,7 +80,9 @@ class Datetime {
     } else if (_.isString(string)) {
       // Parses the string as a moment ISO8601 string.
       return create(string, 'YYYY-MM-DDTHH:mm:ss.SSSZ');
-    } else if (_.isInteger(string)) {
+    } else if (_.isFinite(string)) {
+      // NOTE(mark): By checking isFinite and NOT isInteger, we allow floating
+      // point numbers to be used.
       return create(string);
     } else {
       // Represents the null time which is a blank Datetime object.
