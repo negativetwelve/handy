@@ -1,6 +1,6 @@
 {
   "name": "handy-datetime",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Handy class to parse, format, and manipulate datetimes.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
