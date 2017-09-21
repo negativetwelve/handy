@@ -1,6 +1,6 @@
 {
   "name": "handy-filesize",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "Handy class to parse, format, and manipulate filesizes.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
