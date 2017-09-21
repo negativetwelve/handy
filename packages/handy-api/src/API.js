@@ -1,3 +1,7 @@
+// NOTE(mark): Need to polyfill global.self because isomorphic-fetch
+// requires it.
+global.self = global;
+
 // Libraries
 import Url from 'handy-url';
 import fetch from 'isomorphic-fetch';
