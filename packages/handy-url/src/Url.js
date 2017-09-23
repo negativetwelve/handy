@@ -164,9 +164,11 @@ class Url {
     const {protocol} = this.parsed;
 
     switch (protocol) {
-      // If the url doesn't have a protocol, the parse(url) method returns
-      // `about` for `about:blank`.
+      case '':
+        return null;
       case 'about:':
+        // If the url doesn't have a protocol, the parse(url) method returns
+        // `about` for `about:blank`.
         return null;
       default:
         // We want to remote the colon from the end of the protocol.

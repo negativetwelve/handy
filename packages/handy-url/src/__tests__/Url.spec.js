@@ -1,10 +1,3 @@
-/**
- * @jest-environment jsdom
- *
- * TODO(mark): Unsure why this is necessary but in a node environment, tests
- * fail. Definitely has to do with the Url class.
- */
-
 // Imports
 import Url from '../Url';
 
@@ -127,8 +120,12 @@ describe('Url', () => {
       expect(new Url('https://google.com').domain).toBe('google');
     });
 
-    it('does not require a protocol', () => {
-      expect(new Url('www.google.com').domain).toBe('google');
+    it('does not require a protocol but requires slashes', () => {
+      expect(new Url('//www.google.com').domain).toBe('google');
+    });
+
+    it('returns the empty string for invalid urls', () => {
+      expect(new Url('www.google.com').domain).toBe('');
     });
   });
 
