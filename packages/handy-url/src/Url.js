@@ -201,6 +201,10 @@ class Url {
   // --------------------------------------------------
   // Host / Hostname
   // --------------------------------------------------
+  get isLocalhost() {
+    return this.domain === 'localhost';
+  }
+
   get hostname() {
     return this.parsed.hostname;
   }
