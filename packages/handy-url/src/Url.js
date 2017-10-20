@@ -76,20 +76,11 @@ class Url {
   }
 
   asRelative() {
-    if (this.isAbsolute) {
-      return this.withoutHostname;
-    } else {
-      return this.url;
-    }
+    return this.isAbsolute ? this.withoutProtocol : this.url;
   }
 
   asAbsolute() {
-    if (this.isAbsolute) {
-      return this.parsed.toString();
-    } else {
-      // TODO(mark): Assuming http which is not perfect.
-      return `http://${this.url}`;
-    }
+    return `${this.isAbsolute ? '' : 'http://'}${this.parsed.href}`;
   }
 
   get isValid() {
@@ -195,7 +186,7 @@ class Url {
   }
 
   get withoutProtocol() {
-    return this.url.replace(this.protocol, '');
+    return this.url.replace(`${this.protocol}://`, '');
   }
 
   // --------------------------------------------------
