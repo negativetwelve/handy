@@ -1,6 +1,6 @@
 {
   "name": "handy-url",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "Handy class to parse, format, and manipulate urls.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
