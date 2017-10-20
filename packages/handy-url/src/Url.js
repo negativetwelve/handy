@@ -68,7 +68,9 @@ class Url {
   }
 
   get parsed() {
-    return parse(this.url);
+    // NOTE(mark): Second argument is necessary to treat parsing the same
+    // between node and the browser.
+    return parse(this.url, {});
   }
 
   toString() {
