@@ -5,6 +5,39 @@ import Url from '../Url';
 describe('Url', () => {
 
   // --------------------------------------------------
+  // String Representation
+  // --------------------------------------------------
+  describe('#toString', () => {
+    it('appends protocol to relative urls', () => {
+      expect(new Url('github.com').toString()).toEqual('http://github.com');
+    });
+
+    it('does not append protocol to absolute urls', () => {
+      expect(new Url('https://github.com').toString()).toEqual('https://github.com');
+    });
+  });
+
+  describe('#asAbsolute', () => {
+    it('appends protocol to relative urls', () => {
+      expect(new Url('github.com').asAbsolute()).toEqual('http://github.com');
+    });
+
+    it('does not append protocol to absolute urls', () => {
+      expect(new Url('https://github.com').asAbsolute()).toEqual('https://github.com');
+    });
+  });
+
+  describe('#asRelative', () => {
+    it('does not append protocol to relative urls', () => {
+      expect(new Url('github.com').asRelative()).toEqual('github.com');
+    });
+
+    it('removes protocol from absolute urls', () => {
+      expect(new Url('https://github.com').asRelative()).toEqual('github.com');
+    });
+  });
+
+  // --------------------------------------------------
   // Protocol
   // --------------------------------------------------
   describe('#protocol', () => {
@@ -92,7 +125,7 @@ describe('Url', () => {
     ];
 
     insecureUrls.forEach(url => {
-      it(`return false for ${url}`, () => {
+      it(`returns false for ${url}`, () => {
         expect(new Url(url).isSecure).toBe(false);
       });
     });
